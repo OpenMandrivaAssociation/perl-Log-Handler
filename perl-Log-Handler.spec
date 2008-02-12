@@ -23,13 +23,14 @@ BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
 
 %description
-This module is just a simple object oriented log file handler and very easy to use.
-It's possible to define a log level for your programs and control the amount of
-informations that will be logged to the log file. In addition it's possible to configure
-how you wish to open the log file - transient or permanent - and lock and unlock the
-log file by each write operation. If you wish you can assign the handler to check the
-inode of the log file (not on Windows). That could be very useful if a rotate
-mechanism moves and zip the log file.
+This module is just a simple object oriented log file handler and very easy to
+use.  It's possible to define a log level for your programs and control the
+amount of informations that will be logged to the log file. In addition it's
+possible to configure how you wish to open the log file - transient or
+permanent - and lock and unlock the log file by each write operation. If you
+wish you can assign the handler to check the inode of the log file (not on
+Windows). That could be very useful if a rotate mechanism moves and zip the log
+file.
 
 
 
