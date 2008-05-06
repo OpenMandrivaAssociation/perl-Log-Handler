@@ -1,7 +1,7 @@
 
 %define realname   Log-Handler
-%define version    0.38
-%define release    %mkrel 2
+%define version    0.40
+%define release    %mkrel 1
 
 Name:       perl-%{realname}
 Version:    %{version}
