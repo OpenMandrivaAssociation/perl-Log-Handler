@@ -19,6 +19,7 @@ BuildRequires: perl(File::Spec)
 BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
+BuildRequires: perl(UNIVERSAL::require)
 
 BuildArch: noarch
 
