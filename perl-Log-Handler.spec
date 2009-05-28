@@ -1,18 +1,16 @@
+%define upstream_name    Log-Handler
+%define upstream_version 0.54
 
-%define realname   Log-Handler
-%define version    0.52
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    A simple log file handler
-Source:     http://www.cpan.org/modules/by-module/Log/%{realname}-%{version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+Source0:    http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Carp)
 BuildRequires: perl(Devel::Backtrace)
 BuildRequires: perl(File::Spec)
@@ -20,8 +18,8 @@ BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl(UNIVERSAL::require)
-
 BuildArch: noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module is just a simple object oriented log file handler and very easy to
@@ -33,10 +31,8 @@ wish you can assign the handler to check the inode of the log file (not on
 Windows). That could be very useful if a rotate mechanism moves and zip the log
 file.
 
-
-
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -57,6 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc META.yml ChangeLog README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
 
