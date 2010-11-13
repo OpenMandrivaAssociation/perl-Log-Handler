@@ -1,5 +1,5 @@
 %define upstream_name    Log-Handler
-%define upstream_version 0.65
+%define upstream_version 0.67
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
