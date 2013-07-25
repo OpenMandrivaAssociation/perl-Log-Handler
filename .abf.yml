@@ -1,2 +1,4 @@
+removed_sources:
+  Log-Handler-0.71.tar.gz: d1ea525308dc68da994297a02855b52481fb5ad1
 sources:
-  "Log-Handler-0.71.tar.gz": d1ea525308dc68da994297a02855b52481fb5ad1
+  Log-Handler-0.78.tar.gz: f69d33edf7b079ace369ad6fd04beb9b53a56e83

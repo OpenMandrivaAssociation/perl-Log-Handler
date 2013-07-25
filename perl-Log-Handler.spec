@@ -1,15 +1,15 @@
 %define upstream_name    Log-Handler
-%define upstream_version 0.71
+%define upstream_version 0.78
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.78
+Release:	1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A simple log file handler
 Url:		http://search.cpan.org/dist/%{realname}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Log/Log-Handler-0.78.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -159,5 +159,6 @@ make test
 * Wed Feb 06 2008 Jérôme Quelin <jquelin@mandriva.org> 0.38-1mdv2008.1
 + Revision: 163048
 - import perl-Log-Handler
+
 
 
