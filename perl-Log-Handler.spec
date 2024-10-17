@@ -8,7 +8,7 @@ Release:	5
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A simple log file handler
-Url:		http://search.cpan.org/dist/%{realname}
+Url:		https://search.cpan.org/dist/%{realname}
 Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
