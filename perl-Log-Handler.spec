@@ -11,6 +11,7 @@ Summary:	A simple log file handler
 Url:		https://search.cpan.org/dist/%{realname}
 Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Devel::Backtrace)
