@@ -1,15 +1,13 @@
 %define upstream_name    Log-Handler
-%define upstream_version 0.71
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	0.71
+Release:	6
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A simple log file handler
-Url:		https://search.cpan.org/dist/%{realname}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{realname}
+Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ Windows). That could be very useful if a rotate mechanism moves and zip the log
 file.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -102,8 +100,7 @@ make test
 * Thu May 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.540.0-1mdv2010.0
 + Revision: 380350
 - update to 0.54
-- using %%perl_convert_version
-- fixed license
+- using %0.71 fixed license
 
 * Mon May 25 2009 Jérôme Quelin <jquelin@mandriva.org> 0.52-1mdv2010.0
 + Revision: 379519
